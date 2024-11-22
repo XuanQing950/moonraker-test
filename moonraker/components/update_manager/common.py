@@ -23,7 +23,7 @@ if TYPE_CHECKING:
 
 BASE_CONFIG: Dict[str, Dict[str, str]] = {
     "moonraker": {
-        "origin": "https://github.com/arksine/moonraker.git",
+        "origin": "https://github.com/XuanQing950/moonraker-test.git",
         "requirements": "scripts/moonraker-requirements.txt",
         "venv_args": "-p python3",
         "system_dependencies": "scripts/system-dependencies.json",
@@ -34,7 +34,7 @@ BASE_CONFIG: Dict[str, Dict[str, str]] = {
     },
     "klipper": {
         "moved_origin": "https://github.com/kevinoconnor/klipper.git",
-        "origin": "https://github.com/Klipper3d/klipper.git",
+        "origin": "https://github.com/Solid-Lab-MY/sl-klipper.git",
         "requirements": "scripts/klippy-requirements.txt",
         "venv_args": "-p python3",
         "install_script": "scripts/install-octopi.sh",

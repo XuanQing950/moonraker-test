@@ -45,8 +45,8 @@ classifiers = [
 ]
 
 [project.urls]
-homepage = "https://github.com/Arksine/moonraker"
-repository = "https://github.com/Arksine/moonraker"
+homepage = "https://github.com/XuanQing950/moonraker-test"
+repository = "https://github.com/XuanQing950/moonraker-test"
 documentation = "https://moonraker.readthedocs.io"
 changelog = "https://moonraker.readthedocs.io/en/latest/changelog/"
 
