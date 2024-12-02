@@ -182,7 +182,7 @@ class FileManager:
         paths: Dict[str, Any] = \
             {k: kinfo.get(k) for k in
              ['klipper_path', 'python_path',
-              'log_file', 'config_file']}
+              'log_file', 'config_file', 'macros_path']}
         if paths == self.fixed_path_args:
             # No change in fixed paths
             return
@@ -206,6 +206,11 @@ class FileManager:
             log_path: str = os.path.abspath(os.path.expanduser(log_file))
             self.server.register_static_file_handler(
                 "klippy.log", log_path, force=True)
+            
+        # Register path for macros
+        macros_path = paths.get('macros_path', None)
+        if macros_path is not None:
+            self.register_directory("macros", macros_path)
 
         # Validate config file
         if self.check_klipper_path:
