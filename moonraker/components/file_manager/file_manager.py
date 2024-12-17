@@ -210,7 +210,7 @@ class FileManager:
         # Register path for macros
         macros_path = paths.get('macros_path', None)
         if macros_path is not None:
-            self.register_directory("macros", macros_path)
+            self.register_directory("macros", macros_path, full_access=True)
 
         # Validate config file
         if self.check_klipper_path:
